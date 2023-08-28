@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer - Boost Your Productivity</title>
+    <meta name="description"
+        content="Boost your productivity with the Pomodoro Timer. Set focused work and break intervals to enhance your work routine.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    
+    <div class="app-height">
+        <div class="pomodoro-container">
+            <div class="title-container">
+                <h1 class="title">Pomodoro Timer</h1>
+                <h2 class="description">Enhance Your Work Routine with Focused Intervals</h2>
+            </div>
+            <h3 id="timer" class="mb-2">25:00</h3>
+            <div class="group-container">
+                <div class="form-group">
+                    <label for="workTime">Work Time (minutes)</label>
+                    <input type="number" id="workTime" class="form-control" value="0" min="1" max="999">
+                </div>
+                <div class="form-group">
+                    <label for="breakTime">Break Time (minutes)</label>
+                    <input type="number" id="breakTime" class="form-control" value="15" min="1" max="999">
+                </div>
+            </div>
+            <button id="startButton" class="btn btn-primary mt-2">Start Pomodoro</button>
+            <button id="resetButton" class="btn btn-secondary hidden mt-2">Stop Pomodoro</button>
+        </div>
+    </div>
+
+    <div class="timeSelected-container">
+        <h2 id="timeSelected"></h2>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/david-hernandez-larrea/" target="_blank"><img class="icon"
+                src="src/icon-linkedin.png" alt="LinkedIn Profile"></a>
+        <a href="https://github.com/Hachenda/Pomodoro-timer" target="_blank"><img class="icon" src="src/icon-github.png"
+                alt="GitHub Repository"></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
